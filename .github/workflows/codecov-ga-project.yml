@@ -30,7 +30,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pipenv run pytest tests --cov=tests
+        pipenv run pytest tests --cov=. --cov-report=xml
 
     - name: Posting Coverage
       run: |
